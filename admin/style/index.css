@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.center-align{
+  text-align: center;
+  padding: 10px;
+}
+.login-form{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+.login-form .form{
+  padding: 20px;
+  margin: 1% 40%;
+  background-color: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 600px){
+  .login-form .form{
+    margin: 5% 5%;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 600px){
+  .login-form .form{
+    margin: 3% 30%;
+  }
+}
+.login-form .form input{
+  margin: 5px 0px;
+  outline: none;
+  padding: 5px;
+  height: 40px;
+  font-size: 15px;
+  border: transparent;
+  border-radius: 5px;
+}
+.login-form .form button{
+  outline: none;
+  padding: 5px;
+  height: 30px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: grey;
+  border-radius: 5px;
+  border: none;
+}
+.login-form .form button:hover{
+  background-color: rgb(0, 0, 0);
+}
+.login-form .form input:hover{
+  border: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

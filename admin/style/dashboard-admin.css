@@ -1,0 +1,64 @@
+.panes{
+	display: none;
+	overflow: hidden;
+}
+.main-body .tabs-container .tabs-menu li.active a{
+	color: white;
+	text-decoration: underline;
+	font-weight: 100;
+}
+.main-body{
+	height: 500px;
+	background-color: silver;
+}
+.main-body .tabs-container{
+	display: flex;
+	flex-direction: row;
+}
+.main-body .tabs-container .tabs-menu{
+	padding: 15px 25px 0px 10px;
+	background-color: black;
+}
+
+.main-body .tabs-container .tabs-menu li a {
+	text-decoration: none;
+	list-style: none;
+	color: grey;
+	font-size: 20px;
+}
+.main-body .tabs-container .tab{
+	padding: 20px 25px;
+	height: 500px;
+	width: 100%;
+	overflow-y: scroll;
+	font-size: 20px;
+}
+.main-body .tabs-container .tab .panes .tab-content{
+	overflow-x: scroll;
+}
+@media screen and (max-width: 600px){
+	.main-body{
+		height: 400px;
+		width: 100%;
+	}
+	.main-body .tabs-container .tab{
+		height: 350px;
+	}
+	.main-body .tabs-container{
+		flex-direction: column;
+	}
+	.main-body .tabs-container .tabs-menu{
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+	}
+	.main-body .tabs-container .tabs-menu span a{
+		padding: 5px;
+		font-size: 10px;
+	} 
+	.main-body .tabs-container .tabs-menu li.active a{
+		color: white;
+		font-size: 25px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,90 @@
+*{
+	padding: 0rem;
+	margin: 0rem;
+	box-sizing: border-box;
+}
+.footnav{
+	display: flex;
+	justify-content: space-between;
+	background-color: cyan;
+	padding: 0px 1rem;
+	border-top: 5px solid black;
+}
+.footnav .left {
+	display: flex;
+	padding: 0px 10px;
+}
+.footnav .left img{
+	height: 6rem;
+	width: auto;
+}
+.footnav .left h1{
+	line-height: 6rem;
+}
+.footnav .right{
+	padding-top: 15px;
+}
+.footnav-btm{
+	background-color: darkcyan;
+}
+.footnav-btm .footer-copyright{
+	text-align: center;
+	padding: 10px;
+}
+.footnav .right h3 a, .footnav-btm .footer-copyright p a{
+	text-decoration: none;
+	color: black;
+}
+.footnav .right h3 a:hover{
+	text-decoration: underline;
+}
+.footnav-btm .footer-copyright p a:hover{
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px){
+	.footnav .left h1{
+		text-align: center;
+		font-size: 20px;
+		line-height: 10px;
+	}
+	.footnav .left {
+		margin-bottom: 10px;
+	}
+	.footnav .left img{
+		width: 6rem;
+		height: auto;
+	}
+	.footnav .right h3{
+		text-align:center;
+	}
+	.footnav,.footnav .left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footnav .right .hidden{
+	display: flex;
+	flex-direction:column;
+}
+.footnav .right .hidden .query-input{
+	text-align: center;
+	margin: 4px;
+}
+.footnav .right .hidden .query-input input,.footnav .right .hidden .query-input textarea{
+	padding: 4px;
+	width: 200px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	height: auto;
+}
+.query-cross{
+	float: right;
+	cursor: pointer;
+	font-size: 25px; 
+}
+
+/*-------------------------------------*/
